@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html metal:use-macro="load: mytemplate.pt">
+    <div metal:fill-slot="pagebody">
+
+        <p>Here is the size page.</p>
+    </div>
+</html>

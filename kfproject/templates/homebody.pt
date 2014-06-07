@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html metal:use-macro="load: mytemplate.pt">
+    <div metal:fill-slot="pagebody">
+        <div id="wrapper">
+            <div id="logo" class="container">
+                <h1>Knit<img src="${request.static_url('kfproject:static/kflogo.png')}" width="150" height="150" alt="KnitFitter" />Fitter</h1>
+            </div>
+            <div id="page" class="container">
+                <div>
+                    <div class="entry">
+                        <h2>what do you want to knit?</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="three-column" class="container">
+                <div class="tbox1">
+                    <div class="box-style box-style01">
+                        <div class="content">
+                            <a href="${request.route_url('style')}">
+                                <div class="image"><img src="${request.static_url('kfproject:static/pullover.png')}" width="125" height="125"
+                                    alt="pullover" title="pullover"/>
+                                </div>
+                            </a>
+                            <p></p><h2>a pullover?</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="tbox2">
+                    <div class="box-style box-style02">
+                        <div class="content">
+                            <a href="${request.route_url('style')}">
+                                <div class="image"><img src="${request.static_url('kfproject:static/cardigan.png')}" width="125" height="125"
+                                    alt="cardigan" title="cardigan"/>
+                                </div>
+                            </a>
+                            <p></p><h2>a cardigan?</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="tbox3">
+                    <div class="box-style box-style03">
+                        <div class="content">
+                            <a href="${request.route_url('style')}">
+                                <div class="image"><img src="${request.static_url('kfproject:static/hat.png')}" width="125" height="125"
+                                    alt="hat" title="hat"/>
+                                </div>
+                            </a>
+                            <p></p><h2>a hat?</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="three-column" class="container">
+                <div class="tbox1">
+                    <div class="box-style box-style01">
+                        <div class="content">
+                            <a href="${request.route_url('style')}">
+                                <div class="image"><img src="${request.static_url('kfproject:static/sock.png')}" width="125" height="125"
+                                    alt="socks" title="socks"/>
+                                </div>
+                            </a>
+                            <p></p><h2>socks?</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="tbox2">
+                    <div class="box-style box-style02">
+                        <div class="content">
+                            <a href="${request.route_url('style')}">
+                                 <div class="image"><img src="${request.static_url('kfproject:static/mitten.png')}" width="125" height="125"
+                                    alt="gloves or mittens" title="gloves or mittens"/>
+                                </div>
+                             </a>
+                            <p></p><h2>gloves or mittens?</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="tbox3">
+                    <div class="box-style box-style03">
+                        <div class="content">
+                            <a href="${request.route_url('style')}">
+                                <div class="image"><img src="${request.static_url('kfproject:static/scarf.png')}" width="125" height="125"
+                                    alt="scarf or shawl" title="scarf or shawl"/>
+                                </div>
+                            </a>
+                            <p></p><h2>a scarf or a shawl?</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

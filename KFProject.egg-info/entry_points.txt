@@ -1,0 +1,5 @@
+      [paste.app_factory]
+      main = kfproject:main
+      [console_scripts]
+      initialize_KFProject_db = kfproject.scripts.initializedb:main
+      
